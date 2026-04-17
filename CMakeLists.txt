@@ -19,7 +19,6 @@ if(MSVC)
     # For Microsoft Visual Studio (Windows)
     add_compile_options("/bigobj")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W0 /D_USE_MATH_DEFINES")
-    set(CMAKE_SHARED_LIBRARY_PREFIX "lib")
 else()
     # For non-MSVC (Linux, macOS, etc.)
     set(CMAKE_CXX_FLAGS
